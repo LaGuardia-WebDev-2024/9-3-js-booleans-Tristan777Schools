@@ -17,8 +17,22 @@ draw = function() {
   text("It's negative", 10, 140);
   text("It's zero", 10, 190);
 
-  noFill();
+  if(theNumber < 0){
+    noFill();
+  rect(5, 110, 200, 40); 
+  };
+
+  if(theNumber > 0){
+    noFill();
   rect(5, 60, 200, 40); 
+  };
+  
+  
+  if(theNumber == 0){
+   noFill();
+  rect(5, 160, 200, 40); 
+};
+   
 };
 
 //draw Function - will run when mouseClicked
